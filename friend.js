@@ -20,10 +20,7 @@ var T = new Twit({
   access_token_secret:  ''
 });
 
-
-
-
-
+// new comment
 function favRTs () {
   T.get('statuses/retweets_of_me', {}, function (e,r) {
     for(var i=0;i<r.length;i++) {
